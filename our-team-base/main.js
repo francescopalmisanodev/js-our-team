@@ -37,3 +37,20 @@ const cardInfo=[
         info:"Graphic Designer",
     },
 ];
+for (let i = 0; i < cardInfo.length; i++) {
+    teamContainer.innerHTML += 
+    `<div class="team-card">
+        <div class="card-image">
+        <img
+            src="${cardInfo[i].imgurl}"
+            alt="${cardInfo[i].name} ${cardInfo[i].surname}"
+        />
+        </div>
+        <div class="card-text">
+        <h3>${cardInfo[i].name} ${cardInfo[i].surname}</h3>
+        <p>${cardInfo[i].info}</p>
+        </div>
+     </div>`;
+
+    
+}
